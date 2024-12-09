@@ -3,11 +3,12 @@ import React from 'react';
 const AnimatedTitle = ({ 
   text = "Welcome", 
   delay = 0.1,
-  colorDuration = 8, // Duration in seconds for full color cycle
+  colorDuration = 8,
+  fontSize = "5rem" 
 }) => {
   return (
     <div className="overflow-hidden py-8">
-      <h1 className="text-4xl font-bold">
+      <h1 className="font-bold" style={{ fontSize }}>
         {text.split('').map((char, index) => (
           <span
             key={index}
